@@ -10,7 +10,6 @@ import {
 
 import styled from 'styled-components/native';
 
-const iconLocation = require('./../asset/locationEmpty.png');
 const screenWidth = Dimensions.get('window').width;
 
 class CategoryList extends PureComponent {

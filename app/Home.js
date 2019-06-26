@@ -7,29 +7,28 @@ import laptopImage from './asset/laptop.png';
 import tvImage from './asset/tv.jpg';
 import kipasImage from './asset/kipas.jpg';
 import kulkasImage from './asset/kulkas.jpg';
-import cat1 from './asset/cat1.png';
 
 const itemData = [
   {
-    name: 'Laptop Lenovo', 
+    name: 'Laptop Lenovo GEA RS-06DR Gaming RS06DR', 
     image: laptopImage,
     price: 'Rp. 10.000.000',
     location: 'Jakarta',
   },
   {
-    name: 'TV Led SHARP 24"', 
+    name: 'TV Led SHARP 24" 4K ULTRA HD Amoled', 
     image: tvImage,
     price: 'Rp. 5.000.000',
     location: 'Jakarta',
   },
   {
-    name: 'Kipas Angin', 
+    name: 'Kipas Angin Portable Murah Meriah', 
     image: kipasImage,
     price: 'Rp. 1.000.000',
     location: 'Jakarta',
   },
   {
-    name: 'Kulkas Portable GEA', 
+    name: 'Kulkas Portable GEA RS-06DR Mini Bar Soft Drink Cabinet RS06DR', 
     image: kulkasImage,
     price: 'Rp. 5.000.000',
     location: 'Jakarta',
@@ -37,34 +36,14 @@ const itemData = [
 ]
 
 const CategoryData = [
-  {
-    name: 'Electronik', 
-    image: cat1,
-  },
-  {
-    name: 'Fashion', 
-    image: cat1,
-  },
-  {
-    name: 'Software', 
-    image: cat1,
-  },
-  {
-    name: 'Otomotive', 
-    image: cat1,
-  },
-  {
-    name: 'Food', 
-    image: cat1,
-  },
-  {
-    name: 'Gadget', 
-    image: cat1,
-  },
+  { name: 'Electronik' },
+  { name: 'Fashion' },
+  { name: 'Otomotive' },
+  { name: 'Food' },
+  { name: 'Gadget' },
 ]
 
 export default class Home extends Component {
-  componentDidMount() {}
 
   render() {
     const { navigation } = this.props;
@@ -84,6 +63,3 @@ const Container = styled.ScrollView`
   flex: 1;
 `;
 
-const StyledText = styled.Text`
-
-`;

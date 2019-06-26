@@ -50,13 +50,13 @@ class ListItem extends PureComponent {
     return (
       <Container>
         <FlatList
-            numColumns={2}
-            flexDirection="column"
-            data={data}
-            renderItem={({ item, index }) => this.renderItem(item, index)}
-            keyExtractor={ item => item.name}
-            scrollEnabled={false}
-            />
+          numColumns={2}
+          flexDirection="column"
+          data={data}
+          renderItem={({ item, index }) => this.renderItem(item, index)}
+          keyExtractor={ item => item.name}
+          scrollEnabled={false}
+          />
       </Container>
     );
   }
@@ -77,7 +77,7 @@ const SubWrapper = styled.View`
   margin-right: ${props => (props.index % 2 !== 0 ? '10px' : '5px')};
   background-color: #ffffff;
   shadow-color: #ccc;
-  shadow-offset: 0 3px;
+  shadow-offset: 0 0;
   shadow-opacity: 0.8;
   shadow-radius: 2px;
   elevation: 3;
@@ -111,7 +111,7 @@ const ProductName = styled.Text`
   font-weight: 500;
   margin: 15px 10px 0 10px;
   width: 100%;
-  padding-right: 10px;
+  padding-right: 20px;
 `;
 
 const Location = styled.Text`
